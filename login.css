@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #000000;
+}
+.voltar{
+top:30px;
+position:absolute;
+left:15px;
+background-color: #22C55E;
+width: 60px;
+weight:30px;
+border-radius: 10px;
+}
+.login-container {
+  background: #1f1f1f;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  width: 350px;
+}
+
+.login-container h1 {
+  text-align: center;
+  color: #22C55E;
+  margin-bottom: 30px;
+}
+
+.login-container label {
+  display: block;
+  margin-bottom: 5px;
+  color: #2bc440;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.password-wrapper {
+  position: relative;
+}
+
+.password-wrapper button {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.login-container button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: #22C55E;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-container button[type="submit"]:hover {
+  background: #16A34A;
+}

@@ -1,40 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoCharge</title>
-    <link rel="stylesheet" href="ecocharge.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoCharge</title>
+  <link rel="stylesheet" href="ecocharge.css">
 </head>
-<body> <header>
-    <h1 id="tech">TECHPOINT</h1>
+<body>
+
+  <header class="site-header">
     <button class="mode-toggle" onclick="toggleMode()">
-        <img  src="tema escuro.png">
+      <img src="tema-escuro.png" alt="Alternar tema">
     </button>
+
+    <h1 id="tech">TECHPOINT</h1>
+
     <button class="login" onclick="window.location.href='login.html'">Entrar</button>
-</header>
+  </header>
 
-<h2 id="Funcionalidades">FUNCIONALIDADES:</h2>
-<p id="func">O EcoCharge é um carregador solar portátil e sustentável que converte a luz do sol em energia de forma rápida e eficiente. Ele possui uma bateria interna que armazena energia para uso posterior, permitindo carregar dispositivos mesmo à noite ou em dias nublados. Com duas portas USB de 5V/2A, é possível carregar dois aparelhos ao mesmo tempo. Seu design é compacto, resistente à água e poeira, ideal para aventuras ao ar livre, e conta com LEDs que indicam o nível de carga e a eficiência do painel solar. Fabricado com materiais recicláveis, o EcoCharge une praticidade e responsabilidade ambiental.
-</p>
-<h2 id="beneficios">BENEFICIOS:</h2>
-<p id="ben">O EcoCharge é uma opção sustentável que contribui para a redução do desperdício de energia e do uso de combustíveis fósseis. Leve e fácil de transportar, ele cabe no bolso ou na mochila, garantindo energia em qualquer lugar. Com sua autonomia, você não precisa depender de tomadas ou redes elétricas, pois a energia solar mantém seus dispositivos sempre prontos para uso. Ideal para aventuras como acampamentos, trilhas e festivais, o EcoCharge assegura que você esteja sempre conectado, sem preocupações.
-</p>
-<h2 id="Por que">POR QUE ESCOLHER O ECOCHARGE?</h2>
-<p id="pq">O EcoCharge une tecnologia e sustentabilidade em um só produto, oferecendo praticidade e eficiência em qualquer ocasião. Leve e conveniente, ele permite cuidar do planeta enquanto garante energia limpa e acessível onde quer que você esteja.</p>
-<h2 id="Seu preço">MAS E QUAL O SEU PREÇO?</h2>
-<p id="preço">Admitimos que talvez não seja um preço tão atrativo em vista o nosso país, mas garantimos que o produto é duradouro e de qualidade</p>
-<h2 id="por">POR R$200,00</h2> 
-<img id="basico"  src="Modelo basico.png" alt="Carregador solar">
-<P id="modelo basico">Temos o nosso modelo basico, que por mais que seja o "basico", ja absorve com eficiencia a energia do sol</P>
-<h2 id="rsrs">POR R$400,00</h2>
-<img id="basico"  src="Modelo premium.png" alt="Carregador solar">
-<P id="Modelo premium">Temos o modelo premium, que absorve com ainda mais eficiencia a energia solar, e ainda vem com 5 portas USB!
-    Então garanta já o seu fazendo o seu login </P>
-<footer>
-<p id="rodape">@2025 todos os direitos reservados. Matheus Denner</p>
+  <main class="container">
+    <section>
+      <h2 id="Funcionalidades">FUNCIONALIDADES:</h2>
+      <p id="func">
+        O EcoCharge é um carregador solar portátil e sustentável que converte a luz do sol em energia de forma rápida e eficiente.
+        Ele possui uma bateria interna que armazena energia para uso posterior, permitindo carregar dispositivos mesmo à noite
+        ou em dias nublados. Com duas portas USB de 5V/2A, é possível carregar dois aparelhos ao mesmo tempo. Seu design é compacto,
+        resistente à água e poeira, ideal para aventuras ao ar livre, e conta com LEDs que indicam o nível de carga e a eficiência
+        do painel solar. Fabricado com materiais recicláveis, o EcoCharge une praticidade e responsabilidade ambiental.
+      </p>
+    </section>
 
-</footer>
-<script src="ecocharge.js"></script>
+    <section>
+      <h2 id="beneficios">BENEFÍCIOS:</h2>
+      <p id="ben">
+        O EcoCharge é uma opção sustentável que contribui para a redução do desperdício de energia e do uso de combustíveis fósseis.
+        Leve e fácil de transportar, ele cabe no bolso ou na mochila, garantindo energia em qualquer lugar. Com sua autonomia, você
+        não precisa depender de tomadas ou redes elétricas, pois a energia solar mantém seus dispositivos sempre prontos para uso.
+        Ideal para aventuras como acampamentos, trilhas e festivais, o EcoCharge assegura que você esteja sempre conectado, sem preocupações.
+      </p>
+    </section>
+
+    <section>
+      <h2 id="por-que">POR QUE ESCOLHER O ECOCHARGE?</h2>
+      <p id="pq">
+        O EcoCharge une tecnologia e sustentabilidade em um só produto, oferecendo praticidade e eficiência em qualquer ocasião.
+        Leve e conveniente, ele permite cuidar do planeta enquanto garante energia limpa e acessível onde quer que você esteja.
+      </p>
+    </section>
+
+    <section>
+      <h2 id="preco">MAS E QUAL O SEU PREÇO?</h2>
+      <p id="preço">
+        Admitimos que talvez não seja um preço tão atrativo em vista o nosso país, mas garantimos que o produto é duradouro e de qualidade.
+      </p>
+
+      <div class="produto">
+        <h3 id="por">POR R$200,00</h3>
+        <img src="Modelo basico.png" alt="Carregador solar básico" id="basico">
+        <p id="modelo-basico">
+          Temos o nosso modelo básico, que por mais que seja o "básico", já absorve com eficiência a energia do sol.
+        </p>
+      </div>
+
+      <div class="produto">
+        <h3 id="rsrs">POR R$400,00</h3>
+        <img src="Modelo premium.png" alt="Carregador solar premium">
+        <p id="modelo-premium">
+          Temos o modelo premium, que absorve com ainda mais eficiência a energia solar, e ainda vem com 5 portas USB!
+          Então garanta já o seu fazendo o seu login.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p class="rodape">@2025 Todos os direitos reservados. Matheus Denner.</p>
+  </footer>
+
+  <script src="ecocharge.js"></script>
 </body>
 </html>

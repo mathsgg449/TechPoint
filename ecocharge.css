@@ -1,4 +1,4 @@
-/* ===== FONTES ===== */
+
 @font-face {
   font-family: 'texto';
   src: url('Gotham Ultra.otf') format('opentype');
@@ -9,7 +9,6 @@
   src: url('consola.ttf') format('truetype');
 }
 
-/* ===== RESET ===== */
 * {
   margin: 0;
   padding: 0;
@@ -26,7 +25,7 @@ body {
   transition: background-color 0.4s ease, color 0.4s ease;
 }
 
-/* ===== HEADER ===== */
+
 .site-header {
   width: 100%;
   display: flex;
@@ -68,7 +67,7 @@ body {
   font-size: 2rem;
 }
 
-/* ===== CONTAINER ===== */
+
 .container {
   width: min(90vw, 1000px);
   margin: 2rem auto;
@@ -104,6 +103,7 @@ p {
   border-radius: 12px;
   margin: 1rem auto;
   transition: transform 0.3s ease;
+  border:5px black;
 }
 
 .produto img:hover {
@@ -114,7 +114,34 @@ p {
   margin-bottom: 0.5rem;
 }
 
-/* ===== FOOTER ===== */
+.botao-comprar {
+  background-color: #1c5cd4;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.botao-comprar:hover {
+  background-color: #15359e;
+  transform: scale(1.05);
+}
+
+/* Versão modo escuro */
+body.dark .botao-comprar {
+  background-color: #22C55E;
+  color: #000;
+}
+
+body.dark .botao-comprar:hover {
+  background-color: #16A34A;
+}
+
 .rodape {
   text-align: center;
   width: 100%;
@@ -132,10 +159,8 @@ footer {
 }
 
 
-
-/* =================================================== */
 /* =================== MODO CLARO ==================== */
-/* =================================================== */
+
 body.light {
   background-color: #ffffff;
   color: #111827;
@@ -152,7 +177,7 @@ body.light .login {
 }
 
 body.light h2 {
-  color: #0e246c;
+  color: #15359e;
 }
 
 body.light .produto {
@@ -163,9 +188,8 @@ body.light .produto h3 {
   color: #124199;
 }
 
-/* =================================================== */
 /* =================== MODO ESCURO =================== */
-/* =================================================== */
+
 body.dark {
   background-color: #000000;
   color: #ffffff;

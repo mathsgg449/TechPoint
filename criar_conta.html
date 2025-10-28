@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Criar Conta - EcoCharge</title>
+  <link rel="stylesheet" href="criar_conta.css">
+</head>
+<body class="light">
+
+  <header class="site-header">
+    <h1>EcoCharge</h1>
+    <button class="mode-toggle" id="modeToggle">
+      <img src="tema escuro.png" alt="Alternar tema" id="modeIcon">
+    </button>
+  </header>
+
+  <main class="cadastro-container">
+    <h2>Crie sua Conta</h2>
+    <p>Preencha os dados abaixo para se cadastrar no EcoCharge:</p>
+
+    <form id="cadastroForm">
+      <input type="text" id="nome" placeholder="Nome completo" required>
+      <input type="email" id="email" placeholder="E-mail" required>
+      <input type="password" id="senha" placeholder="Senha" required>
+      <input type="password" id="confirmarSenha" placeholder="Confirmar senha" required>
+      <button type="submit">Cadastrar</button>
+    </form>
+
+    <p class="login-link">
+      Já tem uma conta? <a href="login.html">Entrar</a>
+    </p>
+  </main>
+
+  <footer>
+    <p class="rodape">@2025 Todos os direitos reservados. EcoCharge.</p>
+  </footer>
+
+  <!-- Importa o JavaScript -->
+  <script src="criar_conta.js"></script>
+</body>
+</html>

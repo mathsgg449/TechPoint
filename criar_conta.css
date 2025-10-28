@@ -1,0 +1,183 @@
+@font-face {
+    font-family: 'texto';
+    src: url('Gotham Ultra.otf') format('opentype');
+  }
+  
+  @font-face {
+    font-family: 'titulo';
+    src: url('consola.ttf') format('truetype');
+  }
+  
+  /* ===== RESET ===== */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* ===== BODY ===== */
+  body {
+    font-family: 'texto', sans-serif;
+    background-color: #f5f5f5;
+    color: #222;
+    transition: background-color 0.4s ease, color 0.4s ease;
+  }
+  
+  /* ===== HEADER ===== */
+  .site-header {
+    width: 100%;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0e0e0e;
+    color: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  }
+  
+  .site-header h1 {
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    font-size: 1.6rem;
+  }
+  
+  .mode-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .mode-toggle img {
+    width: 35px;
+    height: 35px;
+    filter: invert(1);
+    transition: transform 0.3s ease;
+  }
+  
+  .mode-toggle img:hover {
+    transform: rotate(20deg);
+  }
+  
+  /* ===== CONTAINER ===== */
+  .cadastro-container {
+    background: white;
+    width: 90%;
+    max-width: 420px;
+    margin: 4rem auto;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .cadastro-container h2 {
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #15359e;
+  }
+  
+  .cadastro-container p {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* ===== FORM ===== */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  input {
+    padding: 0.8rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  input:focus {
+    border-color: #1c5cd4;
+  }
+  
+  button {
+    background-color: #1c5cd4;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.8rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #15359e;
+    transform: scale(1.03);
+  }
+  
+  /* ===== LOGIN LINK ===== */
+  .login-link {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .login-link a {
+    color: #1c5cd4;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .login-link a:hover {
+    text-decoration: underline;
+  }
+  
+  /* ===== FOOTER ===== */
+  footer {
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.8rem;
+    color: #777;
+  }
+  
+  /* ===== MODO ESCURO ===== */
+  body.dark {
+    background-color: #121212;
+    color: #e4e4e4;
+  }
+  
+  body.dark .site-header {
+    background-color: #000;
+    color: #22c55e;
+  }
+  
+  body.dark .mode-toggle img {
+    filter: invert(0);
+  }
+  
+  body.dark .cadastro-container {
+    background-color: #1f1f1f;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.05);
+  }
+  
+  body.dark input {
+    background-color: #2a2a2a;
+    color: white;
+    border: 1px solid #444;
+  }
+  
+  body.dark input:focus {
+    border-color: #22c55e;
+  }
+  
+  body.dark button {
+    background-color: #22c55e;
+    color: black;
+  }
+  
+  body.dark button:hover {
+    background-color: #16a34a;
+  }
+  

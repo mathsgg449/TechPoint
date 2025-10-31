@@ -28,12 +28,7 @@ const modeIcon = document.getElementById('modeIcon');
 modeToggle.addEventListener('click', () => {
   document.body.classList.toggle('dark');
 
-  // Alterna ícone conforme o tema
-  if (document.body.classList.contains('dark')) {
-    modeIcon.src = "tema claro.png";
-  } else {
-    modeIcon.src = "tema escuro.png";
-  }
+
 
   // Salva preferência
   localStorage.setItem('tema', document.body.classList.contains('dark') ? 'dark' : 'light');

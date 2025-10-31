@@ -3,33 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login</title>
+  <title>Entrar - EcoCharge</title>
   <link rel="stylesheet" href="login.css">
 </head>
-<body>
-  <header>
-    <button class="voltar"><button class="voltar" onclick="window.location.href='index.html'">Voltar</button>
-<h1>ECOCHARGE</h1>
+<body class="light">
 
-
+  <header class="site-header">
+    <a href="criar_conta.html"><h1>ECOCHARGE</h1> </a>
+    <button class="mode-toggle" id="modeToggle">
+      <img src="tema escuro.png" alt="Alternar tema" id="modeIcon">
+    </button>
   </header>
-  
-  <div class="login-container">
-    <h1>Bem-vindo</h1>
-    <form id="login-form">
-      <label for="email">Email</label>
-      <input type="email" id="email" placeholder="Digite seu email" required>
 
-      <label for="password">Senha</label>
-      <div class="password-wrapper">
-        <input type="password" id="password" placeholder="Digite sua senha" required>
-        <button type="button" id="toggle-password">👁️</button>
-      </div>
+  <main class="cadastro-container">
+    <h2>ENTRE EM SUA CONTA</h2>
+    <p>Preencha os dados abaixo para entrar:</p>
 
+    <form id="cadastroForm">
+      <input type="email" id="email" placeholder="E-mail" required>
+      <input type="password" id="senha" placeholder="Senha" required>
+      
       <button type="submit">Entrar</button>
     </form>
-  </div>
 
+  </main>
+
+  <footer>
+    <p class="rodape">@2025 Todos os direitos reservados. EcoCharge.</p>
+  </footer>
+
+  <!-- Importa o JavaScript -->
   <script src="login.js"></script>
 </body>
 </html>
